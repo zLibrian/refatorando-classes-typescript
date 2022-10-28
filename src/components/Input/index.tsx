@@ -10,7 +10,9 @@ type IconBaseProps = {
 
 type InputProps = {
   name: string;
-  icon: React.ComponentType<IconBaseProps>;
+  icon?: React.ComponentType<IconBaseProps>;
+  rest?: any;
+  placeholder?: string;
 };
 
 type InputRef = HTMLInputElement;
